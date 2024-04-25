@@ -48,7 +48,7 @@ class MainWindow(QMainWindow):
             }
         """)
         
-        self.conversion_thread = None  # Initialize the thread attribute
+        self.conversion_thread = None
 
     def dragEnterEvent(self, event):
         if event.mimeData().hasUrls():
@@ -66,7 +66,6 @@ class MainWindow(QMainWindow):
             self.label.setStyleSheet("font-size: 16px; color: #ffffff; background-color: #3498db; border: 2px dashed #999999; border-radius: 5px; padding: 20px;")
             self.cancel_button.show()
             
-            # Ensure to cancel the previous thread if it exists
             if self.conversion_thread and self.conversion_thread.isRunning():
                 self.conversion_thread.terminate()
                 self.conversion_thread.wait()
