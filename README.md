@@ -4,6 +4,8 @@ Easily combine multiple image files into a single PDF with a simple drag and dro
 
 The purpose of development is to create PDFs from scanned documents.
 
+![Alt Text](https://github.com/matdulgi/images-to-pdf-easy-converter/blob/main/demo/demo.gif)
+
 <br>
 
 # environment
